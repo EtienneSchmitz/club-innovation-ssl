@@ -3,7 +3,9 @@ id: install
 title: Installation
 ---
 
-La stack logiciel marchent seulement sur Linux et Mac, le simulateur (GrSim) n'est pas disponible sous Windows pour le moment.
+La stack logiciel marchent exclusivement sur Linux et Mac, le simulateur (GrSim) n'est pas disponible sous Windows pour le moment.  
+
+Vous trouverez ci-dessus l'installation manuel, l'équipe va mettre en place une image d'une machine virtuelle pour ce qui sont sous windows.
 
 ## Logiciel de l'équipe
 
@@ -31,25 +33,19 @@ cp .env-example .env
 
 #### Configuration des variables d'environnement
 
+Chaque dossier contient un fichier `.env` où vous pouvez changer le degré du logging que vous allez voir dans la console en mettant la variable d'environnement **LOGLEVEL** à _info_, _warn_ ou _debug_.
+
 ##### Network-Gateway
 
-TODO : En cours de rédaction/résolution d'un bug car on doit indiquer l'adresse ip privée à la place de la locale (seule difficulté de cette installation).
-
-##### Game Data
-
-Dans le `.env`, vous pouvez changer le degré du logging en mettant la variable d'environnement **LOGLEVEL** à _info_, _warn_ ou _debug_.
+La variable d'environnement, **YELLOW** permet d'indiquer à tout le programme la couleur de notre équipe (si vous voulez contrôler les robots bleus, mettez à false, sinon laissez à true).
 
 ##### MSB
 
 TODO : Développement de MSB à finir avant de mettre ici.
 
-##### Bots Control
-
-Dans le `.env`, vous pouvez changer le degré du logging en mettant la variable d'environnement **LOGLEVEL** à _info_, _warn_ ou _debug_.
-
 ##### Bots Gateway
 
-TODO : En cours de rédaction/résolution d'un bug car on doit indiquer l'adresse ip privée à la place de la locale (seule difficulté de cette installation).
+La variable d'environnement, **SIMULATION** permet d'indiquer si l'ordre doit être envoyé à un robot physique ou un robot sous GrSim.
 
 ### Viewer
 
