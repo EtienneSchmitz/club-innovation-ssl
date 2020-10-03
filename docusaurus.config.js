@@ -1,12 +1,12 @@
 module.exports = {
   title: 'Club Innovation - SSL',
   tagline: 'Site de cours du club Innovation de Bordeaux pour le club SSL',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://EtienneSchmitz.github.io',
+  baseUrl: '/club-innovation-ssl/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'EtienneSchmitz', // Usually your GitHub org/user name.
+  projectName: 'club-innovation-ssl', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Club SSL',
@@ -36,12 +36,12 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Style Guide',
+              label: 'Introduction',
               to: 'docs/',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: 'Installation',
+              to: 'docs/introduction/install/',
             },
           ],
         },
@@ -87,13 +87,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/EtienneSchmitz/club-innovation-ssl/tree/master',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/EtienneSchmitz/club-innovation-ssl/tree/master',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
