@@ -28,7 +28,7 @@ Un script (install-dependencies) a été crée dans le but de parcourir de parco
 Si le script ne marches pas pour votre OS, dans chaque dossier faites les commandes suivantes :
 ```
 npm install
-cp .env-example .env
+cp .env.example .env
 ```
 
 #### Configuration des variables d'environnement
