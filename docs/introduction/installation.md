@@ -61,6 +61,6 @@ TODO : En cours de rédaction
 
 ### Game-controller
 
-Allez à l'addresse [suivante](https://github.com/RoboCup-SSL/ssl-game-controller) et installer le paquets de la dernière release selon votre os.
+Allez à l'addresse [suivante](https://github.com/RoboCup-SSL/ssl-game-controller/releases) et installer le paquets de la dernière release selon votre os.
 Au moment de l'écriture la version du game-controller est `2.3.0`.
 
