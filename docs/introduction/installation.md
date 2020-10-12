@@ -57,7 +57,9 @@ Durant ce semestre, le viewer sera remis à jour et des améliorations y seront 
 
 ### GrSim
 
-TODO : En cours de rédaction
+Installer le paquet GrSim disponible à l'adresse [suivante](https://gitlab.namec.fr/ssl/software/external/grSim).  
+N'installer pas celui proposé par la ligue SSL, NAMeC a fais quelques modifications dans le logiciel pour qu'il soit personnalisé à notre robot et à notre IA.   
+Suivez les indications situés dans le [wiki](https://gitlab.namec.fr/ssl/software/backend/backend/-/wikis/Installation#grsim-simulator-see-usage-for-more-information)
 
 ### Game-controller
 
