@@ -18,7 +18,7 @@ L'installation se fait en deux temps, on commence par l'installation puis ensuit
 Cloner le dépôt via cette commande :
 
 ```
-    git clone ssh://git@gitlab.namec.fr:2222/ssl/software/backend-node/backend-node.git --recursive-modules
+    git clone ssh://git@gitlab.namec.fr:2222/ssl/software/backend-node/backend-node.git --recursive
 ```
 
 > Vous pouvez aussi utiliser le lien https si vous n'avez pas de clé SSH stocké sur le GitLab.
@@ -59,7 +59,7 @@ Durant ce semestre, le viewer sera remis à jour et des améliorations y seront 
 
 Installer le paquet GrSim disponible à l'adresse [suivante](https://gitlab.namec.fr/ssl/software/external/grSim).  
 N'installer pas celui proposé par la ligue SSL, NAMeC a fais quelques modifications dans le logiciel pour qu'il soit personnalisé à notre robot et à notre IA.   
-Suivez les indications situés dans le [wiki](https://gitlab.namec.fr/ssl/software/backend/backend/-/wikis/Installation#grsim-simulator-see-usage-for-more-information)
+Suivez les indications situés dans le [wiki](https://gitlab.namec.fr/ssl/software/backend/backend/-/wikis/Installation#grsim-simulator-see-usage-for-more-information).
 
 ### Game-controller
 

@@ -2,7 +2,7 @@ module.exports = {
   someSidebar: {
     Introduction: [
       "introduction/intro",
-      "introduction/equipe",
+      "introduction/presentation",
       "introduction/install",
     ],
   },

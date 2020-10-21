@@ -1,4 +1,0 @@
----
-id: equipe
-title: Equipe
----
