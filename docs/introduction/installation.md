@@ -3,15 +3,17 @@ id: install
 title: Installation
 ---
 
-La stack logiciel marchent exclusivement sur Linux et Mac, le simulateur (GrSim) n'est pas disponible sous Windows pour le moment.  
-
-Vous trouverez ci-dessus l'installation manuel, l'équipe va mettre en place une image d'une machine virtuelle pour ce qui sont sous windows.
+La stack logiciel marchent exclusivement sur Linux (toute distribution) et Mac, le simulateur (GrSim) n'est pas disponible sous Windows pour le moment.  
 
 ## Logiciel de l'équipe
 
 ### Backend Node
 
-L'installation se fait en deux temps, on commence par l'installation puis ensuite par la configuration des variables d'environnement.
+L'installation se fait en deux temps, on commence par l'installation des logiciels puis ensuite la configuration des variables d'environnement.
+
+#### Installation des dépendances
+
+Installer node.js avec une version supèrieur ou égale à la version 14.0 via ce [lien](https://nodejs.org/en/download/package-manager/)
 
 #### Installation des dépôts
 
@@ -38,10 +40,6 @@ Chaque dossier contient un fichier `.env` où vous pouvez changer le degré du l
 ##### Network-Gateway
 
 La variable d'environnement, **YELLOW** permet d'indiquer à tout le programme la couleur de notre équipe (si vous voulez contrôler les robots bleus, mettez à false, sinon laissez à true).
-
-##### MSB
-
-TODO : Développement de MSB à finir avant de mettre ici.
 
 ##### Bots Gateway
 
