@@ -12,3 +12,17 @@
 # Cours 2.2 - Actions MoveBy
 - Explication de comment faire
 - Explication de la commande
+
+
+#### Configuration des variables d'environnement
+
+Chaque dossier contient un fichier `.env` où vous pouvez changer le degré du logging que vous allez voir dans la console en mettant la variable d'environnement **LOGLEVEL** à _info_, _warn_ ou _debug_.
+
+##### Network-Gateway
+
+La variable d'environnement, **YELLOW** permet d'indiquer à tout le programme la couleur de notre équipe (si vous voulez contrôler les robots bleus, mettez à false, sinon laissez à true).
+
+##### Bots Gateway
+
+La variable d'environnement, **SIMULATION** permet d'indiquer si l'ordre doit être envoyé à un robot physique ou un robot sous GrSim.
+
