@@ -37,7 +37,6 @@ Si le script ne marches pas pour votre OS, dans chaque dossier faites les comman
 
 ### GrSim
 
-Installer le paquet GrSim disponible à l'adresse [suivante](https://gitlab.namec.fr/ssl/software/external/grSim).  
 N'installer pas celui proposé par la ligue SSL, NAMeC a fais quelques modifications dans le logiciel pour qu'il soit personnalisé à notre robot et à notre IA.  
 Suivez les indications situés dans le [wiki](https://gitlab.namec.fr/ssl/software/backend/backend/-/wikis/Installation#grsim-simulator-see-usage-for-more-information) (commande d'installation spécifique à Ubuntu).
 
@@ -50,7 +49,7 @@ Au moment de l'écriture la version du game-controller est `2.3.0`.
 
 1. Lancer GrSim
 
-2. Dans des terminaux différents, aller dans les quatres dossiers différents (network-gateway, game-data, bots-control), lancer la commande suivante :
+2. Dans des terminaux différents, aller dans les trois dossiers différents (network-gateway, game-data, bots-control), lancer la commande suivante :
 
 > npm run dev
 
@@ -60,6 +59,6 @@ Au moment de l'écriture la version du game-controller est `2.3.0`.
 
 4. Ensuite dans l'invité de commande, effectuez la commande suivante lorsque le prompt mol apparait :
 
-> call "bots-gateway.control" '{ "id" : 1, "dribblerEnabled" : false, "kick" : false, "chipKick": false, "velocity" : { "normal" : 0, "angular": 0.2, "tangent" : 0 }}'
+> call "bots-gateway.control" '{ "id" : 1, "yellow" : true, "velocity" : { "normal" : 0, "angular": 0.2, "tangent" : 0 }}'
 
-Vous devrez normalement voir le robot 1 bleu tourné sur GRSim. Votre installation marche !
+Vous devrez normalement voir le robot 1 jaune tourné sur GRSim. Votre installation est fonctionnel !
