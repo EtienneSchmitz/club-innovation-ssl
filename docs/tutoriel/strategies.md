@@ -65,3 +65,13 @@ export default class Turn extends Strategies {
   }
 }
 ```
+
+```typescript title="/src/controllers/strategies/index.ts"
+\\ Autre importation de fichiers ici
+import Turn from './turn'
+
+export default {
+  \\ Autre code ici
+  turn : Turn.declarations,
+}
+```
