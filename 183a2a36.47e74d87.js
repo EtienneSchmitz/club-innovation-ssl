@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{60:function(n){n.exports=JSON.parse('{"allTagsPath":"/club-innovation-ssl/blog/tags","slug":"explication","name":"explication","count":1,"permalink":"/club-innovation-ssl/blog/tags/explication"}')}}]);
