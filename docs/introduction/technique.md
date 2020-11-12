@@ -8,6 +8,9 @@ sidebar_label: Techniques
 
 ![schéma technique](/img/ssl/ssl-package.png)
 
+### Vision
+
+La vision va donner les différentes positions du robot (alliés et ennemies).
 
 ### Network-gateway
 

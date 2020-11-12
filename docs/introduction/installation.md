@@ -47,7 +47,9 @@ Au moment de l'écriture la version du game-controller est `2.3.0`.
 
 ## Test d'installation
 
-1. Lancer GrSim
+1. Lancer GrSim. Aller dans le dossier d'installation de grsim et lancer la commande suivante :
+
+> ./bin/grsim
 
 2. Dans des terminaux différents, aller dans les trois dossiers différents (network-gateway, game-data, bots-control), lancer la commande suivante :
 

@@ -26,3 +26,6 @@ La variable d'environnement, **YELLOW** permet d'indiquer à tout le programme l
 
 La variable d'environnement, **SIMULATION** permet d'indiquer si l'ordre doit être envoyé à un robot physique ou un robot sous GrSim.
 
+call "MSB.shoot" '{ "id" : 0 }'
+
+call "bots-control.stop" '{ "id" : 0 }'
