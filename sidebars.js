@@ -6,5 +6,8 @@ module.exports = {
       "introduction/install",
       "introduction/tech",
     ],
+    Tutoriel: [
+      "tutoriel/tuto_strategies"
+    ]
   },
 };

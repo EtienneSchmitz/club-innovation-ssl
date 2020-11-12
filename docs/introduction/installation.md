@@ -64,3 +64,4 @@ Au moment de l'écriture la version du game-controller est `2.3.0`.
 > call "bots-gateway.control" '{ "id" : 1, "yellow" : true, "velocity" : { "normal" : 0, "angular": 0.2, "tangent" : 0 }}'
 
 Vous devrez normalement voir le robot 1 jaune tourné sur GRSim. Votre installation est fonctionnel !
+
