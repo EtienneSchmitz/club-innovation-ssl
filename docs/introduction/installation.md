@@ -3,7 +3,13 @@ id: install
 title: Installation
 ---
 
-La pile logiciel marche exclusivement sur Linux (toute distribution, testée sous la dernière version de Manjaro et Ubuntu >= 18.04) et Mac, le simulateur (GrSim) n'est pas disponible sous Windows pour le moment.
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+:::note
+L'ensemble de la pile logiciel a été testé sous *Linux* (Manjaro et dernière LTS d'Ubuntu), *Mac* et le système wsl **2** de *Windows*.
+:::
 
 ## Logiciel de l'équipe
 
@@ -51,17 +57,19 @@ Au moment de l'écriture la version du game-controller est `2.3.0`.
 
 > ./bin/grsim
 
-2. Dans des terminaux différents, aller dans les trois dossiers différents (network-gateway, game-data, bots-control), lancer la commande suivante :
 
-> npm run dev
-
-3. Dans un autre terminal, dans le dossier bots-gateway, lancer la commande suivante :
+2. Dans un terminal, dans le dossier bots-gateway, lancer la commande suivante :
 
 > npm run repl
 
-4. Ensuite dans l'invité de commande, effectuez la commande suivante lorsque le prompt mol apparait :
+3. Lorsqu'un prompt `$mol` apparait à l'écran, effectuez la commande suivante :
+
+:::note
+Il est possible que vous devez appuyer sur la touche entrée si le mol n'apparait pas au bout de 30 secondes.
+:::
 
 > call "bots-gateway.control" '{ "id" : 1, "yellow" : true, "velocity" : { "normal" : 0, "angular": 0.2, "tangent" : 0 }}'
 
-Vous devrez normalement voir le robot 1 jaune tourné sur GRSim. Votre installation est fonctionnel !
+
+Si le robot jaune avec l'id 1 tourne autour de lui-même dans le simulateur GrSim, votre installation est fonctionnel !
 
