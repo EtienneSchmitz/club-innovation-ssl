@@ -4,9 +4,10 @@ module.exports = {
       "introduction/intro",
       "introduction/presentation",
       {
-        Installation: [
-          "introduction/install/windows",
+        Installation: 
+        [
           "introduction/install/linux",
+          "introduction/install/windows",
           "introduction/install/mac",
           "introduction/install/testing",
         ],
