@@ -38,11 +38,11 @@ module.exports = {
           items: [
             {
               label: "Introduction",
-              to: "docs/",
+              to: "/",
             },
             {
               label: "Installation",
-              to: "docs/introduction/install/",
+              to: "/introduction/install/",
             },
           ],
         },
