@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[23],{89:function(o){o.exports=JSON.parse('{"allTagsPath":"/club-innovation-ssl/blog/tags","slug":"cours","name":"cours","count":1,"permalink":"/club-innovation-ssl/blog/tags/cours"}')}}]);
