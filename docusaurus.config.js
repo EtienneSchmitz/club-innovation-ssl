@@ -1,102 +1,104 @@
 module.exports = {
-  title: 'Club Innovation - SSL',
-  tagline: 'Site de cours du club Innovation de Bordeaux pour le club SSL',
-  url: 'https://EtienneSchmitz.github.io',
-  baseUrl: '/club-innovation-ssl/',
-  onBrokenLinks: 'throw',
-  favicon: 'img/favicon.ico',
-  organizationName: 'EtienneSchmitz', // Usually your GitHub org/user name.
-  projectName: 'club-innovation-ssl', // Usually your repo name.
+  title: "Club Innovation - SSL",
+  tagline: "Site de cours du club Innovation de Bordeaux pour le club SSL",
+  url: "https://EtienneSchmitz.github.io",
+  baseUrl: "/club-innovation-ssl/",
+  onBrokenLinks: "throw",
+  favicon: "img/favicon.ico",
+  organizationName: "EtienneSchmitz", // Usually your GitHub org/user name.
+  projectName: "club-innovation-ssl", // Usually your repo name.
   themeConfig: {
+    hideableSidebar: true,
     navbar: {
-      title: 'Club SSL',
+      title: "Club SSL",
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: "My Site Logo",
+        src: "img/logo.svg",
       },
       items: [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
+          to: "/",
+          activeBasePath: "docs",
+          label: "Docs",
+          position: "left",
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        { to: "blog", label: "Blog", position: "left" },
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://gitlab.namec.fr/ssl/software/backend-node/backend-node",
+          label: "Gitlab",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Docs',
+          title: "Docs",
           items: [
             {
-              label: 'Introduction',
-              to: 'docs/',
+              label: "Introduction",
+              to: "docs/",
             },
             {
-              label: 'Installation',
-              to: 'docs/introduction/install/',
+              label: "Installation",
+              to: "docs/introduction/install/",
             },
           ],
         },
         {
-          title: 'Community',
+          title: "Community",
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: "Stack Overflow",
+              href: "https://stackoverflow.com/questions/tagged/docusaurus",
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: "Discord",
+              href: "https://discordapp.com/invite/docusaurus",
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: "Twitter",
+              href: "https://twitter.com/docusaurus",
             },
           ],
         },
         {
-          title: 'More',
+          title: "More",
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: "Blog",
+              to: "blog",
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: "GitHub",
+              href: "https://github.com/facebook/docusaurus",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} SSL Club Innovation. Built &hearts; with  Docusaurus.`,
     },
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
+          routeBasePath: '/',
           // Please change this to your repo.
           editUrl:
-            'https://github.com/EtienneSchmitz/club-innovation-ssl/tree/master',
+            "https://github.com/EtienneSchmitz/club-innovation-ssl/tree/master",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/EtienneSchmitz/club-innovation-ssl/tree/master',
+            "https://github.com/EtienneSchmitz/club-innovation-ssl/tree/master",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],

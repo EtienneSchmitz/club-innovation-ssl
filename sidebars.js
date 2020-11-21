@@ -1,13 +1,19 @@
 module.exports = {
-  someSidebar: {
+  docs: {
     Introduction: [
       "introduction/intro",
       "introduction/presentation",
-      "introduction/install",
+      {
+        Installation: [
+          "introduction/install/windows",
+          "introduction/install/linux",
+          "introduction/install/mac",
+          "introduction/install/testing",
+        ],
+      },
+      "introduction/install", // To remove
       "introduction/tech",
     ],
-    Tutoriel: [
-      "tutoriel/tuto_strategies"
-    ]
+    Tutoriel: ["tutoriel/tuto_strategies"],
   },
 };
