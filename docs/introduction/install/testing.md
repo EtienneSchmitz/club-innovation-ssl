@@ -35,6 +35,23 @@ Dans le menu **Démarrer**, cherchez grSim.
 </TabItem>
 </Tabs>
 
+## Test bots-gateway
+
+```bash
+# Aller dans bots-gateway
+cd backend-node
+cd bots-gateway
+
+# Launch bots-gateway
+npm run repl
+```
+
+Lorsqu'un prompt $mol apparait à l'écran, effectuez la commande suivante :
+
+> call "bots-gateway.control" '{ "id" : 1, "yellow" : true, "velocity" : { "normal" : 0, "angular": 0.2, "tangent" : 0 }}'
+
+Si le robot jaune avec l'id 1 tourne autour de lui-même dans le simulateur GrSim, vous avez réussi le premier test !
+
 ## Test pipeline
 
 Pour allumer chaque service via la commande `npm run *`, il faudra utiliser un terminal différent.
@@ -63,20 +80,3 @@ Dans le terminal 3, lorsque le prompt `$mol` apparait à l'écran, effectuez la 
 > call "MSB.triangle" '{ "ids" : [1, 2, 3] }'
 
 Un triangle se forme avec les robots alliés 1, 2 et 3.
-
-## Test bots-gateway
-
-```bash
-# Aller dans bots-gateway
-cd backend-node
-cd bots-gateway
-
-# Launch bots-gateway
-npm run repl
-```
-
-Lorsqu'un prompt $mol apparait à l'écran, effectuez la commande suivante :
-
-> call "bots-gateway.control" '{ "id" : 1, "yellow" : true, "velocity" : { "normal" : 0, "angular": 0.2, "tangent" : 0 }}'
-
-Si le robot jaune avec l'id 1 tourne autour de lui-même dans le simulateur GrSim, vous avez réussi le premier test !
