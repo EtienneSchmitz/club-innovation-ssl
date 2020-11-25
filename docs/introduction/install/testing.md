@@ -46,17 +46,22 @@ cd bots-gateway
 npm run repl
 ```
 
-Lorsqu'un prompt $mol apparait à l'écran, effectuez la commande suivante :
+:::note
+Il est possible que vous devez appuyer sur la touche entrée pour voir l'invite de commande `$mol` n'apparait pas au bout de 30 secondes.
+:::
 
-> call "bots-gateway.control" '{ "id" : 1, "yellow" : true, "velocity" : { "normal" : 0, "angular": 0.2, "tangent" : 0 }}'
+Lorsque l'invite de commande `$mol` apparait à l'écran, effectuez la commande suivante :
 
-Si le robot jaune avec l'id 1 tourne autour de lui-même dans le simulateur GrSim, vous avez réussi le premier test !
+> call "bots-gateway.control" '{ "id" : 1, "yellow" : true, "velocity" : { "angular": 0.2 }}'
+
+Si le robot jaune avec l'id 1 tourne autour de lui-même dans le simulateur GrSim, vous avez réussi à parler au simulateur !
 
 ## Test pipeline
 
 Pour allumer chaque service via la commande `npm run *`, il faudra utiliser un terminal différent.
 
 ```bash
+# Tout les terminaux
 cd backend-node
 
 # Terminal 1
@@ -75,8 +80,13 @@ cd bots-control && npm run dev
 cd bots-gateway && npm run dev
 ```
 
+:::note
+Il est possible que vous devez appuyer sur la touche entrée si le mol n'apparait pas au bout de 30 secondes.
+:::
+
 Dans le terminal 3, lorsque le prompt `$mol` apparait à l'écran, effectuez la commande suivante :
 
 > call "MSB.triangle" '{ "ids" : [1, 2, 3] }'
 
-Un triangle se forme avec les robots alliés 1, 2 et 3.
+Un triangle se forme avec les robots alliés 1, 2 et 3.  
+Si vous avez réussi ce test, la pipeline de service est fonctionnelle, vous pouvez commencer à développer.

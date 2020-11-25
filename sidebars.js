@@ -12,7 +12,6 @@ module.exports = {
           "introduction/install/testing",
         ],
       },
-      "introduction/install", // To remove
       "introduction/tech",
     ],
     Tutoriel: ["tutoriel/tuto_strategies"],
