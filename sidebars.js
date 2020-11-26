@@ -12,7 +12,11 @@ module.exports = {
           "introduction/install/testing",
         ],
       },
-      "introduction/tech",
+    ],
+    Base: [
+      "base/prerequisite",
+      "base/moleculer",
+      "base/tech",
     ],
     Tutoriel: ["tutoriel/tuto_strategies"],
   },
