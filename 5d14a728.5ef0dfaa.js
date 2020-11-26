@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{80:function(n){n.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Cours 1 - Explication & Installation","permalink":"/club-innovation-ssl/blog/cours_1"}]}')}}]);
