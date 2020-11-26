@@ -39,11 +39,7 @@ module.exports = {
             {
               label: "Introduction",
               to: "/",
-            },
-            {
-              label: "Installation",
-              to: "/introduction/",
-            },
+            }
           ],
         },
         {
