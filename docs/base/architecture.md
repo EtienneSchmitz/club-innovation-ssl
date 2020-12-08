@@ -7,7 +7,7 @@ sidebar_label: Architecture
 La pile logiciel (`backend-node`) s'appuie sur une [architecture orienté service](https://www.redhat.com/fr/topics/cloud-native-apps/what-is-service-oriented-architecture).  
 Un service est une unité atomique avec une fonctionnalité bien précise. Mis ensemble, les services permettent ainsi d'effectuer la tâche du logiciel entier. 
 
-:::note
+:::note Exemple
 La tâche de l'architecture backend-node est de pouvoir participer à un match de SSL.    
 Un service serait la prise de décision ou la manipulation en vitesse du robot.
 :::
@@ -60,6 +60,10 @@ Contrôler le robot à travers des ordres simples (aller à une position donnée
 #### Bots-Gateway
 
 Envoyer les ordres en vitesse au robot.
+
+#### API-Gateway
+
+#### Bots-placement
 
 ### Présentation des sorties
 
