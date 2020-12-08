@@ -17,6 +17,7 @@ module.exports = {
       "base/prerequisite",
       "base/moleculer",
       "base/tech",
+      "base/math"
     ],
     Tutoriel: ["tutoriel/tuto_strategies"],
   },

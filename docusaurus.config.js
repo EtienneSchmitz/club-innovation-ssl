@@ -1,3 +1,6 @@
+const remarkMath = require("remark-math");
+const rehypeKatex = require("rehype-katex");
+
 module.exports = {
   title: "Club Innovation - SSL",
   tagline: "Site de cours du club Innovation de Bordeaux pour le club SSL",
@@ -24,7 +27,8 @@ module.exports = {
         },
         { to: "blog", label: "Blog", position: "left" },
         {
-          href: "https://gitlab.namec.fr/ssl/software/backend-node/backend-node",
+          href:
+            "https://gitlab.namec.fr/ssl/software/backend-node/backend-node",
           label: "Gitlab",
           position: "right",
         },
@@ -39,7 +43,7 @@ module.exports = {
             {
               label: "Introduction",
               to: "/",
-            }
+            },
           ],
         },
         {
@@ -82,10 +86,12 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          routeBasePath: '/',
+          routeBasePath: "/",
           // Please change this to your repo.
           editUrl:
             "https://github.com/EtienneSchmitz/club-innovation-ssl/tree/master",
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
         },
         blog: {
           showReadingTime: true,
@@ -98,5 +104,11 @@ module.exports = {
         },
       },
     ],
+  ],
+  stylesheets: [
+    {
+      href: "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css",
+      type: "text/css",
+    },
   ],
 };
