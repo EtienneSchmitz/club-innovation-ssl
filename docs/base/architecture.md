@@ -4,11 +4,14 @@ title: Architecture
 sidebar_label: Architecture
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 La pile logiciel (`backend-node`) s'appuie sur une [architecture orienté service](https://www.redhat.com/fr/topics/cloud-native-apps/what-is-service-oriented-architecture).  
-Un service est une unité atomique avec une fonctionnalité bien précise. Mis ensemble, les services permettent ainsi d'effectuer la tâche du logiciel entier. 
+Un service est une unité atomique avec une fonctionnalité bien précise. Mis ensemble, les services permettent ainsi d'effectuer la tâche du logiciel entier.
 
 :::note Exemple
-La tâche de l'architecture backend-node est de pouvoir participer à un match de SSL.    
+La tâche de l'architecture backend-node est de pouvoir participer à un match de SSL.  
 Un service serait la prise de décision ou la manipulation en vitesse du robot.
 :::
 
@@ -29,44 +32,85 @@ A travers le cours du Club Innovation, l'accent sera mis sur les concepts clés 
 
 Dans la suite de ce chapitre, nous allons décrire précisément l'ensemble des fonctionnalités qu'apporte chaque service au projet.
 
-### Présentation des entrées
+### Présentation des entrées-sorties
 
 #### Vision
 
-Les données de vision sont transmises par [ssl-vision](https://github.com/RoboCup-SSL/ssl-vision) (réel) ou [grSim](https://gitlab.namec.fr/ssl/software/external/grSim) (simulation) sous format [protobuf](https://gitlab.namec.fr/ssl/software/external/grSim/-/tree/master/src/proto).  
+Les données de vision sont transmises par [ssl-vision](https://github.com/RoboCup-SSL/ssl-vision) (réel) ou [grSim](https://gitlab.namec.fr/ssl/software/external/grSim) (simulation) sous format [protobuf](https://gitlab.namec.fr/ssl/software/external/grSim/-/tree/master/src/proto).
 
 #### Game-Controller
 
 TODO - A faire (17/12/2020)
 
+#### Robot
+
+TODO - A faire
+
+#### Order
+
+TODO - A faire
+
 ### Présentation interne
 
-#### Network-Gateway
+#### Structure principale
 
+La structure principale se compose de cinq services.
+
+<Tabs
+defaultValue="network"
+values={[
+{label: 'network-gateway', value: 'network'},
+{label: 'game-data', value: 'data'},
+{label: 'MSB', value: 'msb'},
+{label: 'bots-control', value: 'control'},
+{label: 'bots-gateway', value: 'gateway'},
+]}>
+<TabItem value="network">
+
+:::note Fonctionnalité
 Réceptionner les données en entrées (vision ou game-controller).
+:::
+</TabItem>
+<TabItem value="data">
 
-#### Game-Data
+:::note Fonctionnalité
+Filtrer les données obtenus en entrée.
+:::
 
-Filtrer les données obtenus
+</TabItem>
+  
+<TabItem value="msb">
 
-#### MSB
-
+:::note Fonctionnalité
 Prise de décision en fonction d'un état du jeu.
+:::
 
-#### Bots-Control
+</TabItem>
+<TabItem value="control">
 
+:::note Fonctionnalité
 Contrôler le robot à travers des ordres simples (aller à une position donnée, tirer, ...)
+:::  
+  
+</TabItem>
+<TabItem value="gateway">
 
-#### Bots-Gateway
-
+:::note Fonctionnalité
 Envoyer les ordres en vitesse au robot.
+:::
 
-#### API-Gateway
+</TabItem>
+</Tabs>
 
-#### Bots-placement
+#### Outils
 
-### Présentation des sorties
+Ces services sont dans le but de donner des outils et du confort au développeur.
 
-## Librairies des types
+<!-- TODO : APi gateway / bots placement -->
 
+## Librairies externes
+
+### ssl/types
+
+### ssl/algorithm
 
