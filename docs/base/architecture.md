@@ -112,5 +112,14 @@ Ces services sont dans le but de donner des outils et du confort au développeur
 
 ### ssl/types
 
+TODO
+
 ### ssl/algorithm
 
+TODO
+
+## Structure des fichiers du services
+
+### Schéma de définition
+
+### Environnement
