@@ -15,7 +15,7 @@ La tâche de l'architecture backend-node est de pouvoir participer à un match d
 Un service serait la prise de décision ou la manipulation en vitesse du robot.
 :::
 
-Cette approche est à mettre en opposition à l'architecture traditionnelle du développement logiciel : architecture monolithique. La pile de NAMeC (`backend-cpp`) utilise cette architecture.
+Cette approche est à mettre en opposition à l'architecture traditionnelle du développement logiciel : architecture monolithique. La pile de NAMeC (`backend-cpp`) utilise cette architecture.  
 Ces deux types d'architectures (et leur variantes), présente chacun des avantages et des défauts.
 
 :::info
