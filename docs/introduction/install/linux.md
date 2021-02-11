@@ -41,7 +41,7 @@ Avant d'installer GrSim, il faut installer les dépendances suivantes :
 sudo apt-get install -y apt-transport-https ca-certificates gnupg software-properties-common wget
 wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null > /tmp/kitware-archive-latest.asc
 sudo apt-key add /tmp/kitware-archive-latest.asc
-sudo apt-add-repository 'deb https://apt.kitware.com/ubuntu/ bionic main'
+sudo apt-add-repository 'deb https://apt.kitware.com/ubuntu/ focal main'
 sudo apt-get update
 sudo apt install -y cmake
 
